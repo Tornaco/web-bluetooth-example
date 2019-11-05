@@ -67,7 +67,10 @@ function disconnect() {
 
 // Send data:
 function sendData() {
-  if (serviceCharacteristic) {
+  var inputValue = document.getElementById("input_data_to_send").value;
+  console.log(inputValue)
+
+  if (inputValue && serviceCharacteristic) {
     console.log("Write value");
     console.log(serviceCharacteristic);
     var valueBytes = new TextEncoder().encode("Hello world!");

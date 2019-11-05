@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <script type="text/javascript" src="ble.js">
 
-    </script>
-    <title>Web Bluetooth</title>
-  </head>
-  <body>
-    <button onClick='connect()'>connect</button>
-    <button onClick='disconnect()'>disconnect</button>
-    <button onClick='sendData()'>sendData</button>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="ble.js">
+
+  </script>
+  <title>Web Bluetooth</title>
+</head>
+
+<body>
+  <button onClick='connect()'>connect</button>
+  <button onClick='disconnect()'>disconnect</button>
+
+  <form>
+    <input id="input_data_to_send" placeholder="输入发送的内容"></input>
+  </form>
+
+  <button onClick='sendData()'>sendData</button>
+</body>
 </html>
